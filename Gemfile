@@ -23,6 +23,11 @@ gem 'unicorn'
 group :development, :test do
 	gem 'ruby-debug19', :require => 'ruby-debug'
 end
+
+group :production do
+	gem 'pg'
+end
+
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'
