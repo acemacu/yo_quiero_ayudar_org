@@ -11,6 +11,7 @@ gem 'activerecord-mysql2-adapter'
 
 #Authentication gems
 gem 'devise'
+gem 'cancan'
 
 # Use unicorn as the web server
 gem 'unicorn'

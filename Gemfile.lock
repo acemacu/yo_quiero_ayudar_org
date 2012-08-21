@@ -34,6 +34,7 @@ GEM
     arel (2.0.10)
     bcrypt-ruby (3.0.1)
     builder (2.1.2)
+    cancan (1.6.8)
     columnize (0.3.6)
     devise (1.5.3)
       bcrypt-ruby (~> 3.0)
@@ -104,6 +105,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-mysql2-adapter
+  cancan
   devise
   mysql2
   pg
