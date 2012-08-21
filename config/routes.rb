@@ -1,5 +1,10 @@
 YoQuieroAyudarOrg::Application.routes.draw do
+  get "general_information/show"
+
   devise_for :users
+
+  root :to => "general_information#show"
+  match 'informacion_general' => 'general_information#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
