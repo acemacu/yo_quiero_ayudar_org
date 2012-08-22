@@ -13,7 +13,7 @@ body {
 }
 
 #header {
-	height: 99px;
+	height: 110px;
 	width: 1025px;
 }
 
@@ -21,11 +21,13 @@ body {
 	height: 88px;
 	width: 161px;
 	float: left;
+	padding-top: 11px;
 }
 
 #top_menu {
 	height: 44px;
 	padding-left: 220px;
+	padding-top: 11px;
 }
 
 .header_background {

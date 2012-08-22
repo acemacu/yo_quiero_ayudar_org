@@ -3,8 +3,9 @@ YoQuieroAyudarOrg::Application.routes.draw do
 
   devise_for :users
 
-  root :to => "general_information#show"
-  match 'informacion_general' => 'general_information#show'
+  root :to => "general_information#how_to_participate"
+  match 'como_participar' => 'general_information#how_to_participate'
+  match 'sobre_nosotros' => 'general_information#about_us'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

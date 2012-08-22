@@ -1,8 +1,8 @@
-<div class="header_background" id="header"><%= image_tag("Home_02.jpg", :width => "1026", :height => "11", :alt => "top_image" ) %>
+<div class="header_background" id="header">
   <div id="logo">
     <%= image_tag("logo.jpg", :width => "161", :height => "88", :alt => "logo") %>
   </div>
   <div id="top_menu">
-    <%= image_tag("como_participar.jpg", :width => "156", :height => "44", :alt => "como_participar") %><%= image_tag("sobre_nosotros.jpg", :width => "179", :height => "44", :alt => "sobre_nosotros")%><%= image_tag("registro.jpg", :width => "160", :height => "44", :alt => "registro")%><%= image_tag("acceder.jpg", :width => "161", :height => "44", :alt => "acceder")%>
+    <%= link_to image_tag("como_participar.jpg", :width => "156", :height => "44", :alt => "como_participar"), :action=>"how_to_participate", :controller=>"/general_information" %><%= link_to image_tag("sobre_nosotros.jpg", :width => "179", :height => "44", :alt => "sobre_nosotros"), :action=>"about_us", :controller=>"/general_information" %><%= link_to image_tag("registro.jpg", :width => "160", :height => "44", :alt => "registro"), :action => "new", :controller => "devise/registrations" %><%= link_to image_tag("acceder.jpg", :width => "161", :height => "44", :alt => "acceder"), :action => "new", :controller => "devise/sessions" %>
   </div>
 </div>
