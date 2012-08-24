@@ -2,8 +2,10 @@ source 'http://rubygems.org'
 
 gem 'rails'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+#Gems require for rails 3.2
+gem 'sass-rails', "  ~> 3.2.3"
+gem 'coffee-rails', "~> 3.2.1"
+gem 'uglifier', '>= 1.0.3'
 
 #Database gems
 gem 'mysql2'
@@ -12,8 +14,11 @@ gem 'activerecord-mysql2-adapter'
 #Authentication gems
 gem 'devise'
 gem 'cancan'
-
 gem 'devise-encryptable'
+
+#Jquery
+gem "jquery-rails"
+
 
 # Use unicorn as the web server
 gem 'unicorn'
