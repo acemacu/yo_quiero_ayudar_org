@@ -1,11 +1,57 @@
-<div id="banner_superior">
-  <%= image_tag("banner_home_a.png", :width => "762", :height => "172", :alt => "banner superior") %>
-</div>
-<div id="main_text">
-  <h1>Sabemos que tu ya quieres ayudar!</h1>
-  <p id="main_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a elit arcu, et tempus augue. Nulla nec arcu quam. In consequat leo quis nibh laoreet id elementum nisi semper. Vivamus luctus hendrerit aliquam. Etiam mollis ultrices dapibus. Maecenas ut diam diam. Nam ut urna quam. Praesent viverra lectus sed quam iaculis commodo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec magna ante, adipiscing quis eleifend ut, hendrerit eget ligula.
-
-  Etiam viverra, odio ut bibendum rhoncus, nulla neque dapibus velit, non volutpat risus ante sed arcu. Quisque pretium volutpat porttitor. Vivamus nibh nibh, pulvinar nec egestas at, consequat nec sem. In hac habitasse platea dictumst. Duis faucibus ultricies urna vel fringilla. Sed porttitor, lorem vel varius posuere, orci neque interdum odio, pellentesque blandit ipsum magna eget enim. Sed nec metus eu diam lobortis vehicula non id erat. Donec est libero, malesuada lobortis lacinia eu, gravida vestibulum sem. In hac habitasse platea dictumst.
-
-  Ut porttitor velit sit amet leo mattis lacinia. Ut imperdiet tincidunt laoreet. Nam laoreet, ipsum quis dapibus viverra, sapien ligula faucibus augue, nec facilisis metus quam nec mi. In hac habitasse platea dictumst. Proin sit amet lacus nec erat egestas accumsan. Donec id nunc non orci placerat feugiat at sagittis risus. Praesent fermentum, odio in tristique tempus, leo nunc varius velit, vitae pharetra turpis leo vel mauris. Duis eleifend massa vitae purus pharetra nec pretium odio ultricies. Suspendisse condimentum, urna sed convallis faucibus, nisi mi bibendum odio, sit amet laoreet lectus elit non ante. Quisque elit nibh, iaculis id euismod eget, ullamcorper in neque. Praesent eget nisl arcu. Nulla scelerisque tortor quis lorem adipiscing ultricies. Quisque semper, massa eu scelerisque aliquet, purus ligula mattis justo, a eleifend odio lacus vel elit.</p>
+<div class="how_to">
+  <h1 class="main_title">Cómo funciona.</h1>
+  <h2 class="bold_text">El menú principal.</h2>
+  <p>En él se encuentran las secciones principales del sitio identificadas por sus íconos: &nbsp;&nbsp;<%= image_tag("how_it_works_home.jpg") %>&nbsp; <span class="bold_text">inicio</span>, <%= image_tag("how_it_works_hand.jpg") %> <span class="bold_text">servicio social</span>, <span class="bold_text">calendario de eventos</span>, <%= image_tag("how_it_works_world.jpg") %> <span class="bold_text">organizaciones</span>, <%= image_tag("how_it_works_present.jpg") %> <span class="bold_text">donativos</span>, <%= image_tag("how_it_works_15.jpg") %> <span class="bold_text">contacto.</span></p>
+  <table>
+    <tr>
+      <td><%= image_tag("how_it_works_03.jpg") %></td>
+      <td><h2 class="header_light">Servicio social.</h2><td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><p>Hemos formado alianzas con diferentes escuelas y universidades para ofrecer un lugar centralizado dónde encontrar organizaciones a las cuales apoyar y recibir horas de servicio social o prácticas profesionales. Aquí encontrarás todos los puestos disponibles y podrás registrarte y comenzar el trámite según requiera tu escuela o universidad.</p></td>
+    </tr>
+    <tr>
+      <td><%= image_tag("how_it_works_06.jpg") %></td>
+      <td><h2 class="header_light">Calendario de eventos.</h2><td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><p>Esta es la idea de la que surge Yo Quiero Ayudar: un calendario en donde diferentes organizaciones puedan publicar sus eventos o actividades y todas las personas interesadas puedan estar al tanto y participar. Al crear la página nos dimos cuenta de que sería muy útil poder avisar que asistirías al evento, como lo hacemos con otros sitios y servicios. Dando clic al logo de Yo Quiero Ayudar <%= image_tag("quiero_ayudar_hand.jpg") %>  y dejando tu nombre y correo, informarás a la organización que creó el evento que estás interesado en participar.</p></td>
+    </tr>
+    <tr>
+      <td><%= image_tag("how_it_works_08.jpg") %></td>
+      <td><h2 class="header_light">Organizaciones.<h2></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><p>Hemos formado alianzas con diferentes escuelas y universidades para ofrecer un lugar centralizado dónde encontrar organizaciones a las cuales apoyar y recibir horas de servicio social o prácticas pro- fesionales. Aquí encontrarás todos los puestos disponibles y podrás registrarte y comenzar el trámite según requiera tu escuela o uni- versidad. Al elegir una organización, encontrarás el siguiente submenú para interactuar directamente con ella:
+        </br></br>
+        <%= image_tag("how_it_works_11.jpg", :class => "vertically_align") %> <span class="organizations_options">Sobre la Organización.</span></br></br>
+        <%= image_tag("how_it_works_14.jpg", :class => "vertically_align") %> <span class="organizations_options">Eventos de la Organización.</span></br></br>
+        <%= image_tag("how_it_works_16.jpg", :class => "vertically_align") %> <span class="organizations_options">Galería de fotos.</span></br></br>
+        <%= image_tag("how_it_works_22.jpg", :class => "vertically_align") %> <span class="organizations_options">Realiza un donativo a la Organización.</span></br></br>
+        <%= image_tag("how_it_works_25.jpg", :class => "vertically_align") %> <span class="organizations_options">Contacto.</span>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td><%= image_tag("how_it_works_28.jpg") %></td>
+      <td><h2 class="header_light">Donativos.</h2></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><p>Al entrar a la sección o colocarte sobre el botón, tendrás la opción de elegir qué es lo que deseas donar. Elije la organización a la que deseas donarlo, deja tus datos y Yo Quiero Ayudar se encargará de informar a la organización para que te contacten sobre la mejor manera para realizar el donativo.</p></td>
+    </tr>
+    <tr>
+      <td><%= image_tag("how_it_works_31.jpg") %></td>
+      <td><h2 class="header_light">Contacto.</h2></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><p>Si tienes dudas o sugerencias, o simplemente quieres saber más sobre Yo Quiero Ayudar, déjanos tu comentario y estaremos en contacto contigo.</p></td>
+    </tr>
+  </table>
+  <h2 class="bold_text">La barra superior.</h2>
+  <p>Haciendo clic en la parte superior del menú, donde se encuentra el logo de Yo Quiero Ayudar, aparecerá una barra donde encontrarás esta sección, el <span class="bold_text">sobre nosotros</span> y el botón de registro y acceso. Al entrar a una nueva sección la barra se esconde automáticamente ya que no contiene información necesaria para la navegación y así podrás enfocarte en lo que realmente importa.</p>
 </div>

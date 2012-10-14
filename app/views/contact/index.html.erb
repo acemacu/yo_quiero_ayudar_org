@@ -1,0 +1,17 @@
+<div id="contact_page">
+  <h1>Contacto.</h1>
+  <div id="banner_superior">
+    <%= image_tag("banner_home_a.png", :width => "762", :height => "172", :alt => "banner superior") %>
+  </div>
+  <div id="centered_main_text">
+    <%= form_tag("contact_us", :method => "post", :honeypot => true, :id => "contact_form") do %>
+      <%= label_tag(:name, "*Nombre", :class => "contact_label") %></br>
+      <%= text_field_tag(:name, '',:size => 25, :class=> "required") %></br></br>
+      <%= label_tag(:email, "*E-Mail", :class => "contact_label") %></br>
+      <%= text_field_tag(:email, '',:size => 25, :class=> "required email") %></br></br>
+      <%= label_tag(:message, "*Mensaje", :class => "contact_label") %></br>
+      <%= text_area_tag(:message, '', :size => "38x4", :class=> "required") %></br>
+      <%= submit_tag("ENVIAR", :id => "contact_send") %>
+    <% end %>
+  </div>
+</div>

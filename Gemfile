@@ -9,7 +9,6 @@ gem 'uglifier', '>= 1.0.3'
 
 #Database gems
 gem 'mysql2'
-gem 'activerecord-mysql2-adapter'
 
 #Authentication gems
 gem 'devise'
@@ -22,6 +21,8 @@ gem "jquery-rails"
 
 # Use unicorn as the web server
 gem 'unicorn'
+
+gem "honeypot-captcha", "~> 0.0.2"
 
 # Deploy with Capistrano
 # gem 'capistrano'

@@ -1,11 +1,15 @@
 YoQuieroAyudarOrg::Application.routes.draw do
+  get "contact/index"
+
   get "general_information/show"
 
   devise_for :users
 
-  root :to => "general_information#how_to_participate"
-  match 'como_participar' => 'general_information#how_to_participate'
+  root :to => "general_information#welcome"
+  match 'como_funciona' => 'general_information#how_to_participate'
   match 'sobre_nosotros' => 'general_information#about_us'
+  match 'bienvenido' => 'general_information#welcome'
+  match 'contact/contact_us' => 'contact#contact_us', :via => :post
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

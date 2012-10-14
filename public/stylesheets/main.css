@@ -1,20 +1,22 @@
-body,td,th {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+body{
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	color: #FFF;
 }
 
 #wrap {
 	width: 1000px; 
-	margin: 0 auto;
+	margin: -8px auto;
 }
 
 body {
-	background-color: #00bab1;
+	/*background-color: #00bab1;*/
+	background-color: #ffffff;
 }
 
 #header {
 	height: 110px;
 	width: 1025px;
+	display: none;
 }
 
 #logo {
@@ -51,6 +53,50 @@ body {
 	width: 1025px;
 }
 
+.how_to {
+	top: -45px;
+	width: 750px;
+	left: 200px;
+	color: rgb(111, 111, 110);
+	padding-bottom: 50px;
+}
+
+.how_to h2{
+  font-size: 30px;
+}
+
+.how_to h3{
+  font-size: 28px;
+}
+
+.how_to p{
+  font-size: 19px;
+  font-weight: 100;
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+
+.organizations_options{
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+.vertically_align{
+  vertical-align: middle;
+}
+
+.header_light{
+  font-weight: lighter;
+}
+
+.bold_text{
+  font-weight: bold;
+}
+
+td.topics{
+  height: 10px;
+}
+
 #left_menu {
 	height: 500px;
 	width: 80px;
@@ -70,7 +116,7 @@ body {
 	float: left;
 }
 
-#main_text {
+#centered_main_text {
 	position: relative; 
 	top: -45px;
 	width: 450px;
@@ -94,4 +140,97 @@ div#popup_window {
   color: #000000;
   border: 1px solid #1a1a1a;
   font-size: 90%;
+}
+
+/* Welcome section */
+#welcome_div{
+  color: #2C3182;
+}
+
+#welcome_div h1{
+  font-size: 80px;
+  margin-top: 0px;
+  margin-bottom: -10px;
+}
+
+.how_to h1{
+  font-size: 80px;
+  margin-top: 0px;
+  margin-bottom: -10px;
+}
+
+#welcome_div h2{
+  font-size: 30px;
+}
+
+.how_to h2{
+  font-size: 30px;
+}
+
+#welcome_div p{
+  font-size: 19px;
+  font-weight: 100;
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+
+.how_to p{
+  font-size: 19px;
+  font-weight: 100;
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+
+/* Contact */
+#contact_page h1{
+  font-size: 80px;
+  margin-top: 0px;
+  margin-bottom: -10px;
+}
+
+.contact_label {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+#contact_page input[type=text]{
+  border: 1px solid #AE9632;
+  padding: 15px;
+  background: #AE9632;
+  margin: 0 0 10px 0;
+  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 30px;
+  color: #ffffff;  
+}
+
+#contact_page input[type=text]{
+  border: 1px solid #AE9632;
+  padding: 15px;
+  background: #AE9632;
+  margin: 0 0 10px 0;
+  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 30px;
+  color: #ffffff;  
+}
+
+#contact_page textarea{
+  border: 1px solid #AE9632;
+  padding: 15px;
+  background: #AE9632;
+  margin: 0 0 10px 0;
+  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 20px;
+  color: #ffffff;  
+}
+
+#contact_send{
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  font-size: 20px;
+  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  color: #AE9632;
+  font-weight: normal;
+  float: right;
+  margin-right: 30px;
+  padding-top: 3px;
 }

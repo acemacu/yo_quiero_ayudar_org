@@ -1,10 +1,11 @@
 <div class="header_background" id="header">
   <div id="logo">
-    <%= image_tag("logo.jpg", :width => "161", :height => "88", :alt => "logo") %>
+    <%= image_tag("logo.jpg", :width => "206", :height => "88", :alt => "logo") %>
   </div>
   <div id="top_menu">
-    <%= link_to image_tag("como_participar#{'_active' if @how_to_participate}.jpg", :width => "156", :height => "53", :alt => "como_participar"), :action=>"how_to_participate", :controller=>"/general_information" %>
-    <%= link_to image_tag("sobre_nosotros#{'_active' if @about_us}.jpg", :width => "179", :height => "53", :alt => "sobre_nosotros"), :action=>"about_us", :controller=>"/general_information" %>
-    <%= link_to image_tag("registro.jpg", :width => "160", :height => "44", :alt => "registro"), :action => "new", :controller => "devise/registrations" %><%= link_to image_tag("acceder.jpg", :width => "161", :height => "44", :alt => "acceder"), :action => "new", :controller => "devise/sessions" %>
+    <%= link_to image_tag("como_funciona#{'_active' if @how_to_participate}.jpg", :width => "156", :height => "53", :alt => "como_participar"), :action=>"how_to_participate", :controller=>"/general_information" %>
+    <!-- <%= link_to image_tag("sobre_nosotros#{'_active' if @about_us}.jpg", :width => "179", :height => "53", :alt => "sobre_nosotros"), :action=>"about_us", :controller=>"/general_information" %> -->
+    <%= image_tag("sobre_nosotros#{'_active' if @about_us}.jpg", :width => "179", :height => "53", :alt => "sobre_nosotros") %>
+    <%= link_to image_tag("registro.jpg", :width => "160", :height => "44", :alt => "registro"), :action => "new", :controller => "devise/registrations" %><%= link_to image_tag("acceder.jpg", :width => "161", :height => "44", :alt => "acceder"), :action => "new", :controller => "devise/sessions" %><%= image_tag("hide.jpg", :class => "vertically_align", :id => "hide_long_menu")%>
   </div>
 </div>

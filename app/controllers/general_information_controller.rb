@@ -9,5 +9,10 @@ class GeneralInformationController < ApplicationController
   	@about_us = true
   	render :template => 'general_information/about_us.html.erb'
   end
+  
+  def welcome
+    @welcome = true
+    render :template => 'general_information/welcome.html.erb'
+  end
 
 end
